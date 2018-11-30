@@ -1,10 +1,10 @@
 # Project 9 - Honeypots
 
 Deployed Honeypots:  
-![]Sensors.JPG
+![](Sensors.JPG)
 
 Summary:  
-![]Attack_Summary.PNG  
+![](Attack_Summary.PNG)  
 Quite a bit of attacks!
 
 Unresolved Questions:  
